@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Blog</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="login" id="login">
+            <form>
+                <input type="text" name="username" placeholder="Username" required id="Lusername">
+                <input type="password" name="password" placeholder="Password" required id="Lpassword">
+                <input type="submit" value="Login" id="Lsubmit">
+            </form>
+        </div>
+        <div class="reg" id="reg">
+            <form>
+                <input type="text" name="username" placeholder="Username" required id="Rusername">
+                <input type="password" name="password" placeholder="Password" required id="Rpassword">
+                <input type="submit" value="Register" id="Rsubmit">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type=submit]{
+    padding: 10px;
+    margin: 5px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 800px;
+}
