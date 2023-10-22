@@ -8,3 +8,68 @@
 body{
     font-family: 'Roboto Mono', monospace;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*log out*/
+.logout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/*formular*/
+.shareintoblog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"]{
+    margin: 10px;
+    padding: 10px 1px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 600px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+
+.imageinput{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input[type="file"]{
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type="button"]{
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+/*main content*/
+.contant{
+
+}
