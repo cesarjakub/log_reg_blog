@@ -50,3 +50,8 @@ form{
     background-color: rgb(180, 170, 170);
 }
 
+p > span{
+    display: none;
+    color: rgb(195, 0, 0);
+}
+
