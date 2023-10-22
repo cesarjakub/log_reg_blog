@@ -71,5 +71,27 @@ input[type="button"]:hover{
 
 /*main content*/
 .contant{
-
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
 }
+
+.textimg{
+    display: flex;
+    flex-direction: row;
+}
+
+.all{
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
