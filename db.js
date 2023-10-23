@@ -10,13 +10,13 @@ const pool = mysql.createPool({
 }).promise()
 
 
-async function addUser(name, password) {
+export async function addUser(name, password) {
     try {
-        const [existingUsers, fields] = await pool.execute('SELECT * FROM users WHERE name = ?', [name]>
+        const [existingUsers, fields] = await pool.execute('SELECT * FROM users WHERE name = ?', [name]);
         if (existingUsers.length > 0) {
             console.log('Uživatel s tímto jménem již existuje v databázi.');
         } else {
-            const [rows, fields] = await pool.execute('INSERT INTO users (name, password) VALUES (?, ?)>
+            const [rows, fields] = await pool.execute('INSERT INTO users (name, password) VALUES (?, ?)', [name, password]);
             console.log('Uživatel byl úspěšně přidán.');
         }
     } catch (error) {
@@ -26,9 +26,9 @@ async function addUser(name, password) {
 
 
 
-async function getUserByNameAndPassword(name, password) {
+export async function getUserByNameAndPassword(name, password) {
     try {
-        const [rows, fields] = await pool.execute('SELECT * FROM users WHERE name = ? AND password = ?'>
+        const [rows, fields] = await pool.execute('SELECT * FROM users WHERE name = ? AND password = ?', [name, password]);
         if (rows.length > 0) {
             const user = rows[0];
             console.log('Nalezený uživatel:', user);
